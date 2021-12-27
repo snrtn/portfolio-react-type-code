@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Mobile, Tablet } from '../Variables/responsive';
-import Variables from '../Variables/variables';
+import variables from '../Variables/variables';
 
 type Direction = {
   direction: string;
@@ -90,8 +90,8 @@ export const Title = styled.h1`
 
 export const Desc = styled.p`
   margin-top: 10px;
-  font-size: 1.038rem;
+  font-size: ${variables.d14px};
   font-weight: 400;
   padding-right: 60px;
-  color: ${Variables.ColorText};
+  color: ${variables.black};
 `;
