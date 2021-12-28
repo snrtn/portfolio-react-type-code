@@ -1,6 +1,7 @@
 import Slider from '../Components/Home/Slider';
 import Motivation from 'Components/Home/Motivation';
 import styled from 'styled-components';
+import FAQ from 'Components/Home/FAQ';
 
 const Container = styled.div`
   margin-top: 20px;
@@ -15,6 +16,7 @@ const Home = () => {
 
       <Container>
         <Motivation />
+        <FAQ />
       </Container>
     </>
   );

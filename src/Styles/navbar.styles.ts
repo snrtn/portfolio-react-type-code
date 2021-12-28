@@ -21,6 +21,11 @@ export const Wrapper = styled.article`
     height: '100px',
     width: '100%',
   })}
+  ${Tablet({
+    flexDirection: 'column',
+    height: '100px',
+    width: '100%',
+  })}
 `;
 
 export const Left = styled.div`
