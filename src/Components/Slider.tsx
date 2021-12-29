@@ -1,7 +1,5 @@
 import { useState } from 'react';
-// Material icons
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons/';
-// Styles
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import {
   Container,
   Arrow,
@@ -12,18 +10,17 @@ import {
   InfoContainer,
   Title,
   Desc,
-} from '../../Styles/slider.styles';
-// Data
-import { sliderItems } from '../../datas';
+} from '../Styles/slider.styles';
+import { sliderItems } from '../datas';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleClick = (direction: string) => {
     if (direction === 'left') {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 3);
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < 3 ? slideIndex + 1 : 0);
     }
   };
 

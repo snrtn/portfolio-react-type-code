@@ -1,13 +1,12 @@
-// styles
 import {
   Container,
   Wrapper,
   Left,
-  Version,
   Center,
   Logo,
   Right,
-  MenuItem,
+  Menu,
+  Item,
 } from '../Styles/navbar.styles';
 
 const Navbar = () => {
@@ -15,14 +14,14 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Version>FR</Version>
-        </Left>
-        <Center>
           <Logo>Junhan</Logo>
-        </Center>
+        </Left>
+        <Center></Center>
         <Right>
-          <MenuItem>CurriculumVitae</MenuItem>
-          <MenuItem>Feedback</MenuItem>
+          <Menu>
+            <Item>CurriculumVitae</Item>
+            <Item>Feedback</Item>
+          </Menu>
         </Right>
       </Wrapper>
     </Container>

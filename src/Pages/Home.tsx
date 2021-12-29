@@ -1,23 +1,14 @@
-import Slider from '../Components/Home/Slider';
-import Motivation from 'Components/Home/Motivation';
-import styled from 'styled-components';
-import FAQ from 'Components/Home/FAQ';
+import React from 'react';
+import Slider from 'Components/Slider';
+import Motivation from 'Components/Motivation';
 
-const Container = styled.div`
-  margin-top: 20px;
-  height: 50vh;
-  display: flex;
-`;
+interface Props {}
 
-const Home = () => {
+const Home = (props: Props) => {
   return (
     <>
       <Slider />
-
-      <Container>
-        <Motivation />
-        <FAQ />
-      </Container>
+      <Motivation />
     </>
   );
 };

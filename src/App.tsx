@@ -1,17 +1,15 @@
-import Navbar from 'Components/Navbar';
+import Navbar from './Components/Navbar';
 
-// Components
-import Home from './Pages/Home';
+import Home from 'Pages/Home';
 
-// Styles
-import { Wrapper } from './Styles/app.styles';
+import { Container } from './app.styles';
 
 const App = () => {
   return (
-    <Wrapper>
+    <Container>
       <Navbar />
       <Home />
-    </Wrapper>
+    </Container>
   );
 };
 

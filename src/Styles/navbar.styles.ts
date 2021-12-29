@@ -1,109 +1,118 @@
 import styled from 'styled-components';
 import { Mobile, Tablet } from '../Variables/responsive';
+import variables from '../Variables/variables';
 
-export const Container = styled.section`
-  width: auto;
+export const Container = styled.header`
   margin: auto;
-  height: 45px;
+  background-color: ${variables.white};
+
+  ${Mobile({})}
+  ${Tablet({})}
+`;
+
+export const Wrapper = styled.section`
+  height: inherit;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ${Mobile({
+    display: 'block',
+    padding: '10px 0px',
+  })}
+`;
+
+export const Left = styled.article`
+  height: inherit;
+  flex: 1;
   display: flex;
   justify-content: center;
-`;
-
-export const Wrapper = styled.article`
-  width: 1230px;
-  height: inherit;
-  padding: 10px 20px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  ${Mobile({
-    flexDirection: 'column',
-    height: '100px',
-    width: '100%',
-  })}
-  ${Tablet({
-    flexDirection: 'column',
-    height: '100px',
-    width: '100%',
-  })}
-`;
-
-export const Left = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  ${Mobile({
-    display: 'none',
-  })}
-`;
-
-export const Version = styled.span`
-  font-size: 0.663rem;
-`;
-
-export const Center = styled.div`
-  flex: 1;
-  text-align: center;
+  ${Mobile({})}
 `;
 
 export const Logo = styled.h1`
-  font-size: 1.163rem;
+  font-size: ${variables.d24px};
   font-weight: bold;
   color: #333;
   cursor: pointer;
   transition: all 0.5s;
-  text-decoration: underline crimson;
+  text-decoration: underline ${variables.crimson};
+  ${Mobile({
+    fontSize: variables.m24px,
+  })}
   &:hover {
-    color: #ffa500;
-    text-decoration: underline white;
+    color: ${variables.orange};
+    text-decoration: underline ${variables.white};
     font-weight: bold;
   }
 `;
 
-export const Right = styled.div`
+export const Center = styled.article`
+  height: inherit;
+  flex: 1;
+  ${Mobile({ display: 'none' })}
+`;
+
+export const Right = styled.article`
+  height: inherit;
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  position: relative;
+  ${Mobile({
+    marginTop: '20px',
+    justifyContent: 'center',
+  })}
+  &:before {
+    content: '';
+    position: absolute;
+    ${Mobile({
+      backgroundColor: variables.lightgray,
+      height: '2px',
+      width: '100%',
+      bottom: '-12px',
+    })}
+  }
+`;
+
+export const Menu = styled.ul`
+  display: flex;
   ${Mobile({
     width: '100%',
-    height: '100px',
-    // background: 'black',
   })}
 `;
 
-export const MenuItem = styled.div`
-  font-size: 0.85rem;
+export const Item = styled.li`
+  font-size: ${variables.d16px};
   font-weight: 400;
   cursor: pointer;
   margin-left: 25px;
   position: relative;
   cursor: pointer;
-  color: #333;
+  ${Mobile({
+    fontSize: variables.m16px,
+    width: '100%',
+    marginLeft: '0px',
+    textAlign: 'center',
+  })}
   &:before {
     content: '';
     position: absolute;
-    background-color: #ffa500;
-    height: 0.8px;
+    background-color: ${variables.orange};
+    height: 1.3px;
     width: 0;
-    bottom: -5px;
+    bottom: -1px;
     transition: 0.5s;
     left: 50%;
     transform: translateX(-50%);
     ${Mobile({
-      height: '4px',
-      bottom: '-4px',
+      height: '2px',
+      bottom: '-12px',
     })}
   }
   &:hover:before {
     width: 100%;
   }
-  ${Mobile({
-    width: '100%',
-    textAlign: 'center',
-    marginLeft: '0px',
-    borderBottom: '4px solid #deedff',
-    paddingBottom: '5px',
-    margin: '0px',
-  })}
 `;

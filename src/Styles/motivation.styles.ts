@@ -1,82 +1,41 @@
 import styled from 'styled-components';
-
-type Open = {
-  open: boolean;
-};
+import { Mobile, Tablet } from '../Variables/responsive';
+import variables from '../Variables/variables';
 
 export const Container = styled.div`
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100vw;
+  height: 60vh;
+  background: #000;
+  margin-top: 20px;
+  ${Mobile({})}
+  ${Tablet({})}
 `;
 
-export const Wrapper = styled.div`
-  width: 600px;
-  height: 400px;
-  background-color: #0000008d;
-  position: relative;
-  cursor: pointer;
-  margin-left: 9px;
+export const Wrapper = styled.section`
+  height: inherit;
+  display: flex;
+  ${Mobile({
+    display: 'block',
+  })}
+  ${Tablet({})}
+`;
+
+export const Left = styled.div`
+  height: inherit;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Image = styled.img`
-  position: absolute;
-  width: inherit;
-  height: 400px;
-  z-index: -1;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-`;
-
-export const Button = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 1.5s;
-  ${Wrapper}:hover & {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-`;
-
-export const Info = styled.h2`
-  position: absolute;
-  font-size: 1.163rem;
-  color: white;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%) scale(1);
-  transition: all 1.5s;
-  ${Wrapper}:hover & {
-    transform: translate(-50%, -40%) scale(1.2);
-  }
-`;
-
-export const Document = styled.div<Open>`
-  display: ${(props) => !props.open && 'none'};
-  position: absolute;
   width: 100%;
-  height: 1872px;
-  top: 0%;
-  left: 0%;
-  background-color: #00000050;
-  z-index: 5;
-  cursor: pointer;
+  height: 100%;
+  background: no-repeat center cover;
 `;
 
-export const Imgaes = styled.img`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 52.5%;
-  height: 1150px;
-  background-image: url('https://ifh.cc/g/bVLotr.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 10;
+export const Right = styled.div`
+  height: inherit;
+  background: red;
+  flex: 1;
 `;
