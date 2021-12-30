@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Mobile, Tablet } from '../Variables/responsive';
+import { Mobile } from '../Variables/responsive';
 import variables from '../Variables/variables';
 
 type direction = {

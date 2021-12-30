@@ -111,8 +111,7 @@ export const Item = styled.li`
     left: 50%;
     transform: translateX(-50%);
     ${Mobile({
-      height: '2px',
-      bottom: '-12px',
+      content: 'none',
     })}
   }
   &:hover:before {

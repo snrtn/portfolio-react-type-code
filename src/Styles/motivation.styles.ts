@@ -90,7 +90,7 @@ export const Document = styled.div<open>`
   display: ${(props) => !props.open && 'none'};
   position: absolute;
   width: 100%;
-  height: 1872px;
+  height: 1790px;
   top: 0%;
   left: 0%;
   background-color: #00000050;
@@ -135,6 +135,11 @@ export const Right = styled.div`
     margin-top: 50px;
     width: 90%;
     padding-left: 20px;
+    ${Mobile({
+      width: '100%',
+      paddingLeft: '10px',
+      paddingRight: '10px',
+    })}
   }
 
   h2 {

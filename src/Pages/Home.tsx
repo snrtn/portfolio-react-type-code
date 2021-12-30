@@ -1,6 +1,7 @@
 import React from 'react';
-import Slider from 'Components/Slider';
-import Motivation from 'Components/Motivation';
+import Slider from 'Components/Home/Slider';
+import Motivation from 'Components/Home/Motivation';
+import Project from 'Components/Home/Project';
 
 interface Props {}
 
@@ -9,6 +10,7 @@ const Home = (props: Props) => {
     <>
       <Slider />
       <Motivation />
+      <Project />
     </>
   );
 };
