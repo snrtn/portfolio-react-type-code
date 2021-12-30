@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container } from '../../Styles/profli.styles';
 
-import { profilitems } from '../../datas';
+import { profilitems } from '../../Data/datas';
 
 const Profli = () => {
   const [prifilImg, setprifilImg] = useState(0);

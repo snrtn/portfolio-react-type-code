@@ -13,7 +13,7 @@ import {
 } from '../../Styles/motivation.styles';
 import { Add } from '@material-ui/icons';
 
-import { faqItems } from '../../datas';
+import { faqItems } from '../../Data/datas';
 
 const Motivation = () => {
   const [open, setOpen] = useState(false);

@@ -10,7 +10,7 @@ import {
   Title,
   Desc,
 } from '../../Styles/slider.styles';
-import { sliderItems } from '../../datas';
+import { sliderItems } from '../../Data/datas';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 
 const Slider = () => {
