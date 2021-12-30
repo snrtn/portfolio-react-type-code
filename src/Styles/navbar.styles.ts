@@ -5,7 +5,6 @@ import variables from '../Variables/variables';
 export const Container = styled.header`
   margin: auto;
   background-color: ${variables.white};
-
   ${Mobile({})}
   ${Tablet({})}
 `;
@@ -38,8 +37,10 @@ export const Logo = styled.h1`
   cursor: pointer;
   transition: all 0.5s;
   text-decoration: underline ${variables.crimson};
+  letter-spacing: 0.1rem;
   ${Mobile({
     fontSize: variables.m24px,
+    letterSpacing: '0.1em',
   })}
   &:hover {
     color: ${variables.orange};
@@ -91,11 +92,13 @@ export const Item = styled.li`
   margin-left: 25px;
   position: relative;
   cursor: pointer;
+  letter-spacing: 0.07rem;
   ${Mobile({
     fontSize: variables.m16px,
     width: '100%',
     marginLeft: '0px',
     textAlign: 'center',
+    letterSpacing: '0.07em',
   })}
   &:before {
     content: '';
@@ -103,7 +106,7 @@ export const Item = styled.li`
     background-color: ${variables.orange};
     height: 1.3px;
     width: 0;
-    bottom: -1px;
+    bottom: -3px;
     transition: 0.5s;
     left: 50%;
     transform: translateX(-50%);

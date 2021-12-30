@@ -4,7 +4,7 @@ import variables from './Variables/variables';
 
 export const Container = styled.main`
   width: 100%;
-  height: 10000px;
+  height: 100%;
   background-color: ${variables.white};
   overflow: hidden;
 

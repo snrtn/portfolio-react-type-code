@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import {
   Container,
   Arrow,
@@ -12,6 +11,7 @@ import {
   Desc,
 } from '../Styles/slider.styles';
 import { sliderItems } from '../datas';
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);

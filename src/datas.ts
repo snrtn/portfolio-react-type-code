@@ -28,3 +28,18 @@ export const sliderItems = [
     bg: '4169e111',
   },
 ];
+
+export const faqItems = [
+  {
+    id: 1,
+    title: 'Comment puis-je vois le code de source ?',
+    desc: 'Vous pouvez trouver le source code ici : ',
+    adress: 'https://github.com/snrtn/presentation',
+  },
+  {
+    id: 2,
+    title: 'Puis-je savoir plus sur vous ?',
+    desc: "Oui, n'hésitez pas à me contacter. Vous pouvez aussi consulter mon test personnalité ici : ",
+    adress: 'https://app.assessfirst.com/_/profile/7somo4wm-hanjun-kim',
+  },
+];

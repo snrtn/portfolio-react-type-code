@@ -44,6 +44,7 @@ export const Arrow = styled.div<direction>`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
+  transition: all 0.5s ease;
   ${Mobile({})}
 
   &:hover {
@@ -94,8 +95,11 @@ export const Title = styled.h1`
   font-size: ${variables.d24px};
   font-weight: bold;
   padding-left: 20px;
+  letter-spacing: 0.1rem;
   ${Mobile({
     fontSize: variables.m24px,
+    letterSpacing: '0.1em',
+    paddingLeft: '10px',
   })}
 `;
 
@@ -105,7 +109,10 @@ export const Desc = styled.p`
   font-weight: 400;
   padding-right: 60px;
   padding-left: 20px;
+  letter-spacing: 0.07rem;
   ${Mobile({
-    fontSize: variables.m20px,
+    fontSize: variables.m18px,
+    letterSpacing: '0.07em',
+    paddingLeft: '10px',
   })}
 `;
