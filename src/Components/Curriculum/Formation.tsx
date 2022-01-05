@@ -1,9 +1,23 @@
 import React from 'react';
 
-interface Props {}
+import { Container } from '../../Styles/formation.styles';
 
-const Formation = (props: Props) => {
-  return <div></div>;
+import FormationTop from './Formation/FormationTop';
+import FormationBottom from './Formation/FormationBottom';
+
+const Formation = () => {
+  return (
+    <Container>
+      <div className="container">
+        <div className="item12">
+          <FormationTop />
+        </div>
+        <div className="item12">
+          <FormationBottom />
+        </div>
+      </div>
+    </Container>
+  );
 };
 
 export default Formation;

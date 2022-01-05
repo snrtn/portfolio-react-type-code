@@ -86,7 +86,7 @@ export const Menu = styled.ul`
 `;
 
 export const Item = styled.li`
-  font-size: ${variables.d16px};
+  font-size: ${variables.d18px};
   font-weight: 400;
   cursor: pointer;
   margin-left: 25px;
@@ -94,7 +94,7 @@ export const Item = styled.li`
   cursor: pointer;
   letter-spacing: 0.07rem;
   ${Mobile({
-    fontSize: variables.m16px,
+    fontSize: variables.m18px,
     width: '100%',
     marginLeft: '0px',
     textAlign: 'center',
@@ -104,7 +104,7 @@ export const Item = styled.li`
     content: '';
     position: absolute;
     background-color: ${variables.orange};
-    height: 1.3px;
+    height: 2px;
     width: 0;
     bottom: -3px;
     transition: 0.5s;

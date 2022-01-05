@@ -15,7 +15,7 @@ import { Add } from '@material-ui/icons';
 
 import { faqItems } from '../../Data/datas';
 
-const Motivation = () => {
+const Motivation = (props: any) => {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {

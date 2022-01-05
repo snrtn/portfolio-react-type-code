@@ -56,9 +56,9 @@ export const Info = styled.h2`
   font-size: ${variables.d24px};
   font-weight: bold;
   color: ${variables.white};
-  top: 43%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -43%);
+  transform: translate(-50%, -40%);
   transition: all 1s;
   ${Mobile({
     fontSize: variables.m24px,
@@ -71,9 +71,9 @@ export const Info = styled.h2`
 export const Button = styled.div`
   position: absolute;
   color: ${variables.white};
-  top: 50%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.4);
+  transform: translate(-55%, -50%) scale(1.4);
   transition: all 1s;
   ${Mobile({
     top: '55%',
@@ -105,7 +105,7 @@ export const Imgaes = styled.img`
   transform: translate(-50%, -50%);
   width: 52.5%;
   height: 1150px;
-  background-image: url('https://ifh.cc/g/bVLotr.jpg');
+  background-image: url('https://ifh.cc/g/UHon6a.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
